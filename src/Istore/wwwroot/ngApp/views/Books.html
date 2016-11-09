@@ -1,0 +1,29 @@
+﻿
+
+<h2>
+   Books
+</h2>
+<form ng-submit="controller.save()">
+    <div>
+        <label>Name: </label><input ng-model="controller.book.name" />
+    </div>
+
+    <div>
+        <label>Author: </label><input ng-model="controller.book.author" />
+    </div>
+
+    <div>
+        <label> Price: </label><input ng-model="controller.book.price" />
+    </div>
+
+    <div>
+        <label> Page #: </label><input ng-model="controller.book.page" />
+    </div>
+
+    <input type="submit" value="Save books" />
+</form>
+
+<ul>
+    <li ng-repeat="book in controller.books">{{book.name}} - {{book.price}}</li>
+</ul>
+l>

@@ -1,0 +1,18 @@
+﻿
+<h2>
+    Home
+</h2>
+<form ng-submit="controller.save()">
+    <div>
+        <label>Name</label><input ng-model="controller.book.name" />
+
+    </div>
+    <div>
+        <label> Price</label><input ng-model="controller.clothe.price" />
+
+    </div>
+    <input type="submit" value="Save colthes" />
+</form>
+<ul>
+    <li ng-repeat="clothe in controller.clothes">{{clothe.name}} - {{clothe.price}}</li>
+</ul>
